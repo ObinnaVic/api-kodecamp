@@ -68,8 +68,12 @@ header,
 }
 
 .info {
-    width: 100%;
+    max-width: 100%;
     border: 2px solid orange;
+}
+
+.card {
+    width: 100%;
 }
 
 .btn {
@@ -84,7 +88,7 @@ header,
 
 
 .details {
-    display: block;
+    max-width: 100%;
     border-top: 2px solid orange;
 }
 

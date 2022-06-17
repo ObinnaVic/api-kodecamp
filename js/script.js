@@ -10,24 +10,20 @@ let reviewArray = [];
 function detail() {
     let postItem = '';
         reviewArray.forEach(function (items) {
-            postItem += `
-        <div class="col-lg-4 col-md-6 m-0 d-flex justify-content-center">
-            <div class="info m-2">
-                <span>${items.id}</span>
-                <div class="review-head p-3">
-                    <div class="title">${items.title}</div>
-                </div>
-                
-                <div class="details p-2 bg-light">${items.body}
-                </div>
-                <div class="d-flex justify-content-between">
-                    <div class="delete px-2 border border-2 border-success rounded bg-warning" onclick="postDelete(${items.id})">delete</div>
-                    <div id="btn" class="btn p-0 border border-2 border-success rounded-start bg-warning" onclick="viewPost(${items.id})">view more</div>
-                    <div class="update px-2 border border-2 border-success rounded bg-warning" onclick="update(${items.id})">update</div>
-                </div>
-            </div>
-        </div>`
-
+            postItem += `<div class="col-lg-4 col-md-6 m-0 d-flex justify-content-center">
+                            <div class="card">
+                                <div class="card-body info m-2">
+                                    <p>${items.id}</p>
+                                    <h6 class="title">${items.title}</h6>
+                                    <p class="details">${items.body}</p>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="delete px-2 border border-2 border-success rounded bg-warning" onclick="postDelete(${items.id})">delete</div>
+                                        <div id="btn" class="btn p-0 border border-2 border-success rounded-start bg-warning" onclick="viewPost(${items.id})">view more</div>
+                                        <div class="update px-2 border border-2 border-success rounded bg-warning" onclick="update(${items.id})">update</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`
         });
     reviewItems.innerHTML = postItem;
 }
