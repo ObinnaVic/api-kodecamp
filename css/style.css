@@ -140,7 +140,10 @@ header,
         width: 80%;
     }
 
-    .sec-one,
+    .sec-one {
+        height: 500px;
+    }
+    
     .one {
         height: 400px;
     }
