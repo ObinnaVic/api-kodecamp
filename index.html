@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Review Page</title>
+</head>
+<body>
+  <div class="one pb-5">
+    <nav class="navbar navbar-expand-lg bg-light m-0">
+      <div class="container-fluid">
+          <img class="nav-logo" src="./img/food-logo.png" alt="food-logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active bg-warning border-success rounded p-2" aria-current="page" href="./reviews.html">Reviews</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="logo-sec d-flex justify-content-center">
+        <img class="logo" src="./img/food-logo.png" alt="food-logo">
+    </div>
+    <div class="topic mb-3 d-flex flex-column align-items-center">
+      <h3 class="text-center text-warning fw-bold">WELCOME TO THE HOME OF MAXIMUM SATISFACTION</h3>
+      <div class="underline text-center"></div>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper h-100">
+      <div class="swiper-wrapper h-100">
+        <div class="swiper-slide d-flex justify-content-center h-100">
+          <img src="./img/food-5.jpg" alt="food-5" class="img-fluid h-100">
+        </div>
+        <div class="swiper-slide d-flex justify-content-center h-100">
+          <img class="img-fluid h-100" src="./img/food-6.jpg" alt="food-6">
+        </div>
+        <div class="swiper-slide d-flex justify-content-center h-100">
+          <img class="img-fluid h-100" src="./img/food-7.jpg" alt="food-7">
+        </div>
+        <div class="swiper-slide d-flex justify-content-center h-100">
+          <img class="img-fluid h-100" src="./img/food-8.jpg" alt="food-8">
+        </div>
+        <div class="swiper-slide d-flex justify-content-center h-100">
+          <img src="./img/food-9.png" alt="food-9" class="img-fluid h-100">
+        </div>
+        <div class="swiper-slide d-flex justify-content-center h-100">
+          <img src="./img/food-10.jpg" alt="food-10" class="img-fluid h-100">
+        </div>
+        <div class="swiper-slide d-flex justify-content-center h-100">
+          <img class="img-fluid h-100" src="./img/food-1.jpg" alt="food-1">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="review-btn">
+      <a class="nav-link active bg-warning border-success rounded p-2 mt-3" aria-current="page" href="./reviews.html">Reviews</a>
+    </div>
+  </div>  
+  <div class="card text-center">
+    <div class="card-header">
+      Featured
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn-primary">Contact us at any time and anywhere</a>
+    </div>
+    <div class="card-footer text-muted">
+      copyright@2020
+    </div>
+  </div>
+
+          <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        autoplay: {
+           delay: 1200,
+           disableOnInteraction: false,
+         },
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    
+      
+
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

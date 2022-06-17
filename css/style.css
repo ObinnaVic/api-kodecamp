@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'nunito', sans-serif;
+    margin: 0;
+}
+
+.nav-link {
+    width: 80px;
+    text-align: center;
+}
+
+header,
+.form {
+    width: 100%;
+}
+
+.input,
+.input-two {
+    width: 37%;
+}
+
+.header {
+    color: rgb(25, 34, 34);
+}
+
+.underline {
+    width: 100px;
+    border-bottom: 1px solid orange;
+    border-width: 7px;
+}
+
+.nav-logo {
+    width: 5%;
+}
+
+.logo {
+    width: 20%;
+    overflow: hidden;
+}
+
+.first-sec,
+.one,
+.sec-one {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.8)), url(../img/food-logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px 0px 40px 0px;
+}
+
+.sec-one,
+.one {
+    height: 700px;
+}
+
+.img {
+    border-radius: 50%;
+    width: 70%;
+}
+
+.reviews {
+    background: rgb(207, 205, 205);
+}
+
+.info {
+    width: 100%;
+    border: 2px solid orange;
+}
+
+.btn {
+    float: right;
+    cursor: pointer;
+}
+
+.delete,
+.update {
+    cursor: pointer;
+}
+
+
+.details {
+    display: block;
+    border-top: 2px solid orange;
+}
+
+.swiper-wrapper,
+.swiper {
+    height: 200px !important;
+}
+
+.swiper-slide img{
+    width: 70%;
+}
+
+.food-img {
+    min-width: 100%;
+}
+
+.comment-sec {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+}
+
+.view-sec {
+    padding: 10px;
+    width: 40%;
+    border: 6px solid orange;
+}
+
+.review-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 769px) {
+    .img {
+        width: 50%;
+    }
+
+    .input,
+    .textarea,
+    .input-two,
+    .textarea-two {
+        width: 70%;
+    }
+
+    .logo {
+        width: 15%;
+    }
+
+    .view-sec {
+        width: 80%;
+    }
+
+    .sec-one,
+    .one {
+        height: 400px;
+    }
+
+    .swiper-wrapper,
+    .swiper {
+        height: 100px !important;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .swiper-slide img{
+        width: 100%;
+    }
+}
